@@ -1,0 +1,80 @@
+// arttures Page Styling
+.lec-page-hero
+	text-align: center
+	margin-bottom: 0
+	background: $primary
+	h1
+		font-size: 45px
+	p
+		color: $faded-text
+
+.cards-container
+	padding-top: 30px
+	padding-left: 60px
+	padding-right: 60px
+	box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75)
+	.row
+		.card-col
+			a,a:visited,a:link,a:active,a:focus
+				color: $text-color
+				text-decoration: none
+
+
+.art-card
+	display: block
+	width: auto
+	height: 250px
+	margin-bottom: 30px
+	background: white
+	border: 1px solid $faded-text
+	box-shadow: 0 4px 2px 0 rgba(0,0,0,.25),0 4px 10px 0 rgba(0,0,0,.25)
+	overflow: hidden
+	transition: all .4s ease-in-out
+	hr
+		border-color: $sec-text
+	&:active
+		transform: scale(0.95)
+		transform-origin: 50% 50%
+	&:hover
+		background: $secondary
+		color: white
+		p
+			color: white
+		hr
+			border-color: white
+
+
+.art-card-header
+	text-align: center
+	font-size: 20px
+	line-height: 1
+	font-weight: bold
+	display: -webkit-box
+	overflow: hidden
+	-webkit-line-clamp: 3
+	-webkit-box-orient: vertical
+	h1
+		font-size: 20px
+		color: $text-color !important
+
+.date
+	.fa
+		margin: 0
+		padding: 0 5px 0 0
+
+p
+	font-size: 20px
+	color: $sec-text
+	margin: 5px 3px 5px 15px
+	line-height: 1.5
+	-webkit-line-clamp: 6
+	-webkit-box-orient: vertical
+	display: -webkit-box
+
+@media (max-width: 700px)
+	.art-card
+		padding: auto
+		margin: 0 0 20px 0
+		border-width: 1px 1px 2px 1px
+	.art-card-image
+		display: none

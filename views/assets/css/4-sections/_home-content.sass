@@ -1,0 +1,158 @@
+//Jumbotron
+.jumbotron,.hero,.navbar
+	color: white
+	background: $primary
+
+.hero
+	padding-top: 0
+	margin-top: 0
+	padding-bottom: 0
+	margin-bottom: 0
+	text-align: center
+	height: 100%
+	overflow: hidden
+	height: 100vh
+	
+
+	h4
+		font-size: 20px
+		color: white
+	a:link, a:visited
+		color: white
+		transition: all 0.2s ease-in-out
+
+.intro
+	font-weight: bold
+	margin-top: 20vh
+	h1
+		margin: 0 auto
+		line-height: 1
+		width: 600px
+		padding-bottom: 20px
+		
+	animation-delay: 5s
+	animation-iteration-count: infinite
+.art
+	display: block
+	margin: 0 auto
+	margin-top: 50px
+	position: fixed
+	top: 70%
+	left: 33%
+
+.btn
+	border: 1px solid $secondary
+	background: $secondary
+	color: white
+	border: 0
+	width: 200px
+	height: 50px
+	text-align: center
+	padding-top : 10px
+	font-size: 20px
+	box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75)
+	transition: .2s all ease-in-out
+	&:active
+		box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75)
+	&:hover
+		transform : scale(1.02)
+
+
+//Rows below The Jumbotron
+.acc-col
+	margin-top: 50px			
+// Informations Row
+.info-col
+	background: white
+
+	text-align: center
+	font-size: 18px
+	p
+		color: $text-color
+		font-size: 1.1em
+	.info-lead
+		color: $text-color
+		margin: 35px auto 35px auto
+		width: 230px
+		padding: 5px
+		border-bottom: 2px solid $primary
+
+	.info-feature-img
+		width: 120px
+		margin: 25px
+
+	.lpart
+		
+	.epart
+		.exeute-icon
+			&:hover
+				animation-name: run
+				animation-duration: 2s
+				animation-iteration-count: infinite
+	.bpart	
+		.build-icon
+			&:hover
+				animation-name: ham
+				animation-duration: 0.6s
+				animation-iteration-count: infinite
+
+
+// Visitor Type
+
+.acc-col
+	background: $primary
+	text-align: center
+	box-shadow: 0px 1px 19px 1px rgba(0,0,0,0.7)
+
+	.acc-lead
+		color: white
+		margin: 35px auto 60px auto
+		width: 185px
+		padding: 5px
+		border-bottom: 2px solid $sec-text
+	.guest-card
+		margin-bottom: 50px
+
+@keyframes ham
+	0%
+		transform: rotate(0deg)
+	50%
+		transform: rotate(-50deg)
+	100%
+		transform: rotate(0deg)
+
+
+@keyframes run
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+// Media Queries
+@media (max-width: 1000px)
+	.hero
+		font-size: 10px
+		h4
+			margin-bottom: 5px
+	.navs
+		font-size: 12px	
+	.intro
+		h1
+			width: 400px
+			font-size: 50px	
+
+@media (max-width: 500px)
+	.hero
+		
+		h4
+			margin-top: 0
+			margin-bottom: 15px
+			font-size: 15px
+	.navs
+		font-size: 12px	
+	.intro
+		margin-bottom: 0
+		h1
+			width: 250px
+			font-size: 30px		
+	

@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-htmltidy": "^0.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uncss": "^1.0.5"
+  }
+}
